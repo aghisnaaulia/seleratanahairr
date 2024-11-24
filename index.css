@@ -1,13 +1,18 @@
 .isi {
     position: relative;
     margin: 10px 80px;
+    color: #000000;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+    text-shadow: none;
 }
 
 #navbarr {
-    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar-brand {
@@ -38,25 +43,102 @@
     margin-top: 2px;
 }
 
+.container-eek {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background-image: linear-gradient(to bottom, rgb(255, 136, 91, 0.3), rgb(255, 136, 91, 0.6), rgb(255, 136, 91));
+    padding: 5rem;
+    margin: 5%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    height: fit-content;
+    max-width: 400px;
+    
+}
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.login-container p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+#judul-login {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #666;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.login-btn:hover {
+    background-color: #555;
+}
+.terms {
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+    margin-top: 1rem;
+}
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 #sliderr {
     margin: 10px 0;
     border-radius: 15px;
 }
 
 #rekomen-text {
+    display: flex;
     position: relative;
     margin-top: 50px;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
-#kotak-row-rekomen {
+#kotak-row-rekomen { 
     border-radius: 15px;
-    background-image: linear-gradient(to bottom, #ffffff, #FFE5CF, #FFE5CF);
+    background-image: linear-gradient(to bottom, rgb(255, 201, 111, 0.3), rgb(255, 201, 111, 0.6), rgb(255, 201, 111));
     width: 185vh;
-    height: 80vh;
+    height: fit-content;
     padding: 0 5%;
     margin: 0 -35px;
 }
@@ -64,19 +146,24 @@
 #kotak-col-rekomen {
     position: relative;
     width: 90%;
+    height: fit-content;
     background-color: #ffffff;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     padding: 20px 20px;
-    margin: -50px 20px;
+    margin: 60px 20px;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
+#kotak-col-rekomen:hover {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
 
 #kotak-text-rekomen {
     height: fit-content;
+    margin-top: 35px;
     font-size: 15px;
     text-decoration: none;
     font-weight: normal;
@@ -84,8 +171,207 @@
 }
 
 .img-rekomen {
+    position: relative;
     width: 200px;
-    border-radius: 50%;
+    border-radius: 20px;
     border: none;
     margin-top: 10%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.img-rekomen:hover {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+#cont-rekomen { 
+    background: linear-gradient(to bottom, rgb(255, 201, 111, 0.3), rgb(255, 201, 111, 0.6), rgb(255, 201, 111));;
+    width: fit-content;
+    height: fit-content;
+}
+
+#row-card-rekomen {
+    position: relative;
+    display: flex;
+    width: max-content;
+    padding: auto;
+    margin: auto;
+    flex-direction: row; 
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#img-card-rekomen {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    margin-top: 15%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#card-text-rekomen {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+}
+
+#card-klik {
+    position: relative;
+    color: #6D7588; 
+    background-color: #ffffff; 
+    border-color: #cacaca;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+    margin: 0px 28px 25px;
+    width: 80%;
+    height: 40px;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+#card-klik:hover, 
+#card-klik:focus, 
+#card-klik:active, 
+#card-klik.active, 
+.open .dropdown-toggle #card-klik { 
+  color: #ffffff; 
+  background-color: #797979;
+}
+
+#kotak-col-eksplor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#prov-klik {
+    position: relative;
+    color: #000000; 
+    transition-duration: 0.4s;
+    padding: 1.5rem 0rem 0rem 0rem;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+#prov-klik:hover, 
+#prov-klik:focus, 
+#prov-klik:active, 
+#prov-klik.active, 
+.open .dropdown-toggle #prov-klik { 
+  color: #797979; 
+}
+
+#btn-klik {
+    position: relative;
+    color: #6D7588; 
+    background-color: #ffffff; 
+    border-color: #EDEDED;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.4s;
+    margin: 5px 28px 25px;
+    width: 80%;
+    height: fit-content;
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+#btn-klik:hover, 
+#btn-klik:focus, 
+#btn-klik:active, 
+#btn-klik.active, 
+.open .dropdown-toggle #btn-klik { 
+  color: #ffffff; 
+  background-color: #797979;
+}
+
+#btn-slider-1 {
+    position: relative;
+    color: #ffffff; 
+    background: none; 
+    border-color: #EDEDED;
+    border-radius: 20px;
+    margin: -350px 42% 0px;
+    width: 17%;
+    height: fit-content;
+    font-size: 15px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+#btn-slider-1:hover, 
+#btn-slider-1:focus, 
+#btn-slider-1:active, 
+#btn-slider-1.active, 
+.open .dropdown-toggle #btn-slider-1 { 
+  color: #000000; 
+  background-color: #EDEDED;
+}
+
+#eksplor-full {
+    width: 100%;
+    height: fit-content;
+}
+
+#eksplor-text {
+    position: relative;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#kotak-col-eksplor {
+    position: relative;
+    width: 90%;
+    height: fit-content;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    padding: 20px 20px;
+    margin: 30px 20px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#kotak-col-eksplor:hover {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+#kotak-text-eksplor {
+    height: fit-content;
+    margin-top: 35px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: justify;
 }

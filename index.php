@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selera Tanah Air | Resep Menu Cita Rasa Nusantara</title>
+    <title>Resep Menu Cita Rasa Nusantara | Selera Tanah Air</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
@@ -71,15 +71,16 @@
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" id="sliderr">
             <div class="carousel-item active">
-                <img src="assets/img/tokped.jpg" class="d-block w-100" alt="...">
+                <img src="assets/img/carousel_1.jpg" class="d-block w-100" alt="...">
             </div>
 
             <div class="carousel-item">
-                <img src="assets/img/tokped.jpg" class="d-block w-100" alt="...">
+                <img src="assets/img/carousel_2.jpg" class="d-block w-100" alt="...">
+                <button type="button" class="btn btn-lg btn-custom" id="btn-slider-1">Show Recipes</button>
             </div>
 
             <div class="carousel-item">
-                <img src="assets/img/tokped.jpg" class="d-block w-100" alt="...">
+                <img src="assets/img/carousel_3.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
 
@@ -94,35 +95,113 @@
         </button>
     </div>
 
+    <br>
+
     <!-- rekomendasi -->
     <div class="container text-center">
-        <h2 id="rekomen-text">Popular Recipes you Can Try</h2>
+        <p id="rekomen-text">Popular Recipes you Can Try</p>
 
-        <div class="row align-items-start" id="kotak-row-rekomen">
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="row-card-rekomen">
             <div class="col">
-                <div id="circle-col-rekomen">
-                    <img src="assets/img/rekomen.jpeg" class="img-rekomen" alt="">
-                    <div id="kotak-col-rekomen">
-                        <p id="kotak-text-rekomen">Rendang (bahasa Minangkabau: randang; Jawi: رندڠ) adalah hidangan berbahan dasar daging yang dihasilkan dari proses memasak suhu rendah dalam waktu lama dengan menggunakan aneka rempah-rempah dan santan.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col">
-                <div id="circle-col-rekomen">
-                    <img src="assets/img/rekomen.jpeg" class="img-rekomen" alt="">
-                    <div id="kotak-col-rekomen">
-                        <p id="kotak-text-rekomen">Gudeg (bahasa Jawa: Guděg) adalah hidangan khas Daerah Istimewa Yogyakarta yang terbuat dari nangka muda yang dimasak dengan santan.</p>
+                <div class="card h-100" style="width: 18rem; border-radius: 20px">
+                    <img src="assets/img/rendang.jpg" class="card-img-top" id="img-card-rekomen" alt="Rendang">
+                    <div class="card-body">
+                        <p class="card-text" id="card-text-rekomen">
+                            Rendang adalah hidangan berbahan dasar daging yang dihasilkan dari proses memasak suhu rendah dalam waktu lama dengan menggunakan aneka rempah-rempah dan santan...</p>
+                        <a href="#" class="card-link" id="card-klik">
+                            Show Recipes</a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div id="circle-col-rekomen">
-                    <img src="assets/img/rekomen.jpeg" class="img-rekomen" alt="">
-                    <div id="kotak-col-rekomen">
-                        <p id="kotak-text-rekomen">Coto makassar atau Pallu coto mangkasarak adalah hidangan tradisional Suku Makassar, Sulawesi Selatan.[1] Makanan ini terbuat dari jeroan sapi yang direbus dalam waktu yang lama.</p>
+                <div class="card h-100" style="width: 18rem; border-radius: 20px">
+                    <img src="assets/img/gudeg.jpg" class="card-img-top" id="img-card-rekomen" alt="Gudeg">
+                    <div class="card-body">
+                        <p class="card-text" id="card-text-rekomen">
+                            Gudeg adalah hidangan khas Daerah Istimewa Yogyakarta yang terbuat dari nangka muda yang dimasak dengan santan...</p>
+                        <a href="#" class="card-link" id="card-klik">
+                            Show Recipes</a>
                     </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100" style="width: 18rem; border-radius: 20px">
+                    <img src="assets/img/rendang.jpg" class="card-img-top" id="img-card-rekomen" alt="Rendang">
+                    <div class="card-body">
+                        <p class="card-text" id="card-text-rekomen">
+                            Rendang adalah hidangan berbahan dasar daging yang dihasilkan dari proses memasak suhu rendah dalam waktu lama dengan menggunakan aneka rempah-rempah dan santan...</p>
+                        <a href="#" class="card-link" id="card-klik">
+                            Show Recipes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- eksplor -->
+    <div class="container text-center" id="eksplor-full">
+        <h2 id="eksplor-text">Explore Recipes by District</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <div class="row align-items-start" id="kotak-row-eksplor">
+                    <div class="col">
+                        <div id="kotak-col-eksplor">
+                            <a href="#" id="prov-klik">
+                                Nanggroe Aceh Darussalam</a>
+                            <a href="#" id="prov-klik">
+                                Sumatera Utara</a>
+                            <a href="#" id="prov-klik">
+                                Sumatera Selatan</a>
+                            <a href="#" id="prov-klik">
+                                Sumatera Barat</a>
+                            <a href="#" id="prov-klik">
+                                Bengkulu</a>
+                            <a href="#" id="prov-klik">
+                                Riau</a>
+                            <a href="#" id="prov-klik">
+                                Kepulauan Riau</a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div id="kotak-col-eksplor">
+                            <a href="#" id="prov-klik">Jambi</a>
+                            <a href="#" id="prov-klik">Lampung</a>
+                            <a href="#" id="prov-klik">Bangka Belitung</a>
+                            <a href="#" id="prov-klik">Kalimantan Barat</a>
+                            <a href="#" id="prov-klik">Kalimantan Timur</a>
+                            <a href="#" id="prov-klik">Kalimantan Selatan</a>
+                            <a href="#" id="prov-klik">Kalimantan Tengah</a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div id="kotak-col-eksplor">
+                            <a href="#" id="prov-klik">Kalimantan Utara</a>
+                            <a href="#" id="prov-klik">Banten</a>
+                            <a href="#" id="prov-klik">DKI Jakarta</a>
+                            <a href="#" id="prov-klik">Jawa Barat</a>
+                            <a href="#" id="prov-klik">Jawa Tengah</a>
+                            <a href="#" id="prov-klik">Daerah Istimewa Yogyakarta</a>
+                            <a href="#" id="prov-klik">Jawa Timur</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
                 </div>
             </div>
         </div>
